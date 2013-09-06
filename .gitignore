@@ -16,3 +16,6 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# You never, ever want to share this file
+cookies.txt
