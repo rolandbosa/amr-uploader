@@ -17,12 +17,9 @@ Edit the location of your World of Warcraft folder inside amr.rb:
 You also need a file with the proper cookies from an authenticated
 session with www.askmrrobot.com.
 
-I used Google Chrome and installed the 'Export cookie.txt' addon. The
-extension is small and provides exactly the format needed for curl.
-
-    http://www.google.com/chrome
-
-    https://code.google.com/p/cookie-txt-export/
+I used [Google Chrome](http://www.google.com/chrome) and installed
+the [Export cookie.txt](https://code.google.com/p/cookie-txt-export/)
+addon. The extension is small and provides exactly the format needed for curl.
 
 Save your cookies to a file named 'cookies.txt'. If you use a
 different filename, update the amr.rb script variable $COOKIES_PATH
@@ -42,9 +39,8 @@ your character has weird umlauts - who knows what will happen ;-).
 Credits
 -------
 
-The guts of this script are (shamelessly) taken from a thread on Ask
-Mr. Robot's forums:
-
-    http://forums.askmrrobot.com/index.php?topic=5102.0
+The guts of this script are (shamelessly) taken from
+[this](http://forums.askmrrobot.com/index.php?topic=5102.0) thread on Ask
+Mr. Robot's forums.
 
 No gems were hurt while writing this script.
