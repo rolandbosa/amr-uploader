@@ -14,23 +14,30 @@ Edit the location of your World of Warcraft folder inside amr.rb:
 
     emacs amr.rb
 
-You will also need a file with the cookies from an authenticated
-session with askmrrobot.com. I used Google Chrome and install the
-'Export cookie.txt' addon. The extension is small and provides exactly
-the format needed for curl.
+You also need a file with the proper cookies from an authenticated
+session with www.askmrrobot.com.
+
+I used Google Chrome and installed the 'Export cookie.txt' addon. The
+extension is small and provides exactly the format needed for curl.
 
     http://www.google.com/chrome
 
     https://code.google.com/p/cookie-txt-export/
 
-Save your cookies alongside the script in a file called
-'cookies.txt'. If you use a different filename, update the amr.rb
-script variable $COOKIES_PATH.
+Save your cookies to a file named 'cookies.txt'. If you use a
+different filename, update the amr.rb script variable $COOKIES_PATH
+accordingly.
 
 Now you should be able to run the script and it will upload the Lua
 file as it gets modified:
 
     ./amr.rb
+
+Your mileage may vary with 'exotic' realms like "Kill'Jaeden"
+(contains an apostrophy) or "Altar of Storms" (contains spaces). What
+I'm saying here is - I haven't tested it with those realms. Also, if
+your character has weird umlauts - who knows what will happen ;-).
+
 
 Credits
 -------
