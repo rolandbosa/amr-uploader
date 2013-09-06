@@ -90,13 +90,13 @@ Listen.to!($WOW_PATH,
       if result["HasError"] then
         TerminalNotifier.notify("There was an error: #{result}",
                                 :title => $TERM_TITLE,
-                                :subtitle => $TERM_SUBTITLE)
+                                :subtitle => $TERM_SUBTITLE) if $TERM_ENABLE
         puts "The server returned an error: #{result}"
       else
         TerminalNotifier.notify("Uploaded #{character} of #{realm}",
                                 :title => $TERM_TITLE,
                                 :subtitle => $TERM_SUBTITLE,
-                                :sound => 'default')
+                                :sound => 'default') if $TERM_ENABLE
         $CACHE[relative_path] = digest
         puts "Finished."
       end
